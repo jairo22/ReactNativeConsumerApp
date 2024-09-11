@@ -1,0 +1,28 @@
+{
+  "name": "main",
+  "displayName": "yasta consumidor",
+  "plugins": [
+    "expo-tracking-transparency",
+    "@react-native-google-signin/google-signin"
+  ],
+  "expo": {
+    "android": {
+      "googleServicesFile": "./android/app/google-services.json"
+    },
+    "ios": {
+      "googleServicesFile": "./ios/Instamobile/GoogleService-Info.plist",
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "Allow this app to collect app-related data that can be used for tracking you or your device."
+      }
+    },
+    "plugins": [
+      "expo-localization",
+      "expo-tracking-transparency"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c73338ea-abfe-459c-9432-c1e36065e994"
+      }
+    }
+  }
+}
